@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width:100%;
+}
+
+.nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+}
+
+
+.header h2{
+font-size: 2rem;
+font-weight: bold;
+color: #fff;
+letter-spacing: 3px;
+}
+
+.header span{
+    color: rgb(97, 210, 230);
+}
+
+
+.nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+}
+
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+letter-spacing: 3px;
+transition: 0.6s;
+}
+
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
+
+
+li a:hover{
+background-color: rgb(97, 210, 230);
+color: #fff;
+
+}
+
+.banner{
+height: 100%;
+width: 100%;
+position: absolute;
+background-size: cover;
+top: 0;
+z-index: -1;
+}
+
+.section{
+    padding-top: 20rem;
+    padding-left: 10rem;
+    display: flex;
+    position: relative;
+    gap: 5rem;
+}
+
+.intro{
+    right: 50%;
+}
+
+.intro h2{
+    font-size: clamp(1rem, -0.625rem + 5.2vw, 2.3rem);
+color: #fff;
+position: relative;
+top: -5rem;
+}
+
+.intro span{
+    color:  rgb(97, 210, 230);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 0.125rem + 4.4vw, 2.6rem); 
+    letter-spacing: .2px;
+}
+
+.intro h4{
+    color: #fff;
+    width: 30rem;
+    top: -4rem;
+    position: relative;
+    font-size: clamp(0.5rem, 0.1094rem + 1.25vw, 0.8125rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro h1{
+    width: 19ch;
+    animation: typing 2.5s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #fff;
+    color:  rgb(97, 210, 230);
+    font-size: 3.2rem;
+    position: relative;
+    top: -5rem;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+
+.links{
+        
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+
+.links a {
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+    padding-right: 10px;
+    padding: 2.57rem;
+}
+
+.links a:hover{
+    scale: 1.2;
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+.fa-spotify{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+
+.persue h3{
+    color: aqua;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    bottom: -4rem;
+    position: relative;
+}
+
+.persue p{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: -4rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    background-color: #0a192f;
+    border-radius: 20px;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #218e00;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+  }
+  
+  .sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .form-card1 {
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+  }
+  
+  .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+  
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+  
+  .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  .container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px; 
+}
+
+.hover-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #00faff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #00faff;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #00faff;
+    color: #000;
+    cursor: pointer;
+}

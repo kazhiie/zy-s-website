@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black */
+    color: #fff;
+}
+
+header {
+    background-color: #555; /* Grey */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #00ff00; /* Neon Green */
+    color: #000; /* Black */
+}
+
+footer {
+    background-color: #555; /* Grey */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Mobile Legends Page Styles */
+.avatar-container {
+    text-align: center;
+}
+
+.avatar-container img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.avatar-container img:hover {
+    transform: scale(1.1);
+}
+
+.players-info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Call of Duty: Mobile Page Styles */
+/* You can add specific styles for the Call of Duty page here if needed */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin: 20px auto;
+    }
+}
